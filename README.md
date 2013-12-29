@@ -1,4 +1,4 @@
-ELEC223
-=======
+Embedded systems and C language (ELEC223)
+========================================
 
-Embedded Systems and C language
+Exercises on Makefiles, C programs, ARM assembly language, etc. 
