@@ -2,3 +2,7 @@
 *.o
 *.swp
 *.exe
+*.elf
+*.lst
+*.x
+*.bin
