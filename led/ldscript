@@ -1,0 +1,28 @@
+MEMORY
+{
+        rom (rx) : ORIGIN = 0x00000000, LENGTH = 2M
+        ram (!rx): ORIGIN = 0x0c000000, LENGTH = 8M
+	empty    : ORIGIN = 0x01000000, LENGTH = 0
+}
+_stack = ORIGIN(ram) + LENGTH(ram);
+
+ENTRY(_start);
+
+SECTIONS
+{
+        . = 0x0c000000;
+        .text : {
+              my_crt0.o(.text*)
+              *(.text*)
+        } > ram
+        .rodata : {
+		*(.rodata*)
+        } > ram
+        .data : {
+              *(.*data*)
+        } > empty
+        .bss : {
+             *(.*bss*) *(*COMMON*)
+        } > empty
+}
+

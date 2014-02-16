@@ -1,4 +1,4 @@
-Embedded systems and C language (ELEC223)
-========================================
+Embedded systems and C language
+================================
 
-Exercises on Makefiles, C programs, ARM assembly language, etc. 
+These are some small exercices (and a project to write a bootloader) done on an ARM FS44B0XII board (with an ARM7TDMI core).  
