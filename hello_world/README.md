@@ -1,0 +1,1 @@
+This is a little exercice to write "Hello World!\n" through serial co
