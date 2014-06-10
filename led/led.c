@@ -14,7 +14,7 @@ int main() {
   while (1) {
     /*volatile keyword is to prevent compiler
     from removing empty loop in O2 optimization*/
-    volatile int i; 
+    volatile unsigned int i; 
     //led D3 on
     PORT_C = 0x2;
     for (i=0; i<BIG_NUMBER; i++);
